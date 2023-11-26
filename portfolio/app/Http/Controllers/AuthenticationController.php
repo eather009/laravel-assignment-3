@@ -18,17 +18,17 @@ class AuthenticationController extends Controller
         if ($request->isMethod('POST')
             && !empty($request->input('email'))
         ) {
-            $request->validate([
+            $credentials = $request->validate([
                 'email' => ['required', 'email'],
                 'password' => ['required'],
             ]);
 
-            if(Auth::attempt($request->only('email', 'password'))){
+            if (Auth::attempt($credentials)) {
                 $request->session()->regenerate();
 
                 return redirect('/admin');
             }
-            
+
             return back()->withErrors([
                 'email' => 'The provided credentials do not match our records.',
             ])->onlyInput('email');
