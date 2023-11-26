@@ -29,3 +29,11 @@ vi .env
 ## Run following command to start server
 
 <code>php artisan serve</code>
+
+
+# For Demo, visit 
+http://13.231.214.135/
+
+Login: 
+email: eather.ahmed@gmail.com
+password: testPassword
