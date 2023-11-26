@@ -1,6 +1,11 @@
 # laravel-assignment-3
 ## Clone from git
-git clone 
+<code>git clone https://github.com/eather009/laravel-assignment-3.git
+<br/>
+cd laravel-assignment-3/portfolio
+</code>
+
+## create database first and Update .env for database connection 
 
 ## Run Following Commands to Initiate database
 <code>
@@ -15,8 +20,6 @@ git clone
 <br/>php artisan db:seed WorkHistoriesTableSeeder
 </code>
 
-
-## Update .env for database connection
 
 ## Run following command to start server
 
