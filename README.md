@@ -4,7 +4,12 @@ git clone https://github.com/eather009/laravel-assignment-3.git
 <br/>
 <code>cd laravel-assignment-3/portfolio</code>
 
-## create database first and Update .env for database connection 
+## run composer
+<code>composer install</code>
+## create database first
+cp .env.example .env
+### Update .env for database connection
+vi .env
 
 ## Run Following Commands to Initiate database
 <code>
@@ -17,6 +22,7 @@ git clone https://github.com/eather009/laravel-assignment-3.git
 <br/>php artisan db:seed SkillsTableSeeder
 <br/>php artisan db:seed CompaniesTableSeeder
 <br/>php artisan db:seed WorkHistoriesTableSeeder
+<br/>php artisan storage:link
 </code>
 
 

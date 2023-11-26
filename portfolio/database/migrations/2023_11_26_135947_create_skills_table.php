@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('skills', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id')->nullable(false);
+            $table->integer('user_id')->index('userid');
             $table->string('skill_name')->nullable(false);
             $table->integer('value_of_ten')->nullable(true)->default(10);
             $table->string('proof_url')->nullable(true);
