@@ -1,9 +1,8 @@
 # laravel-assignment-3
 ## Clone from git
-<code>git clone https://github.com/eather009/laravel-assignment-3.git
+git clone https://github.com/eather009/laravel-assignment-3.git
 <br/>
-cd laravel-assignment-3/portfolio
-</code>
+<code>cd laravel-assignment-3/portfolio</code>
 
 ## create database first and Update .env for database connection 
 
